@@ -1,6 +1,6 @@
 # [dantran.fr](https://dantran.fr)
 
-Still a WIP.. future frontend of https://dantran.fr
+Frontend of https://dantran.fr, deployed with CloudFlare Pages
 
 Playing with React and the following backend stack:
 * Python (FastAPI)
