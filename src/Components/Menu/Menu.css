@@ -1,0 +1,35 @@
+.Menu {
+  font-family: ABeeZee, sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.Menu ul {
+  padding-left: 0px;
+}
+
+.Menu li {
+  display: inline-block;
+  padding: 15px;
+}
+
+.Menu a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.2s ease-in;
+}
+
+.Menu a:hover {
+  color: #666666;
+}
+
+.MenuIcon {
+  font-size: 0.9em;
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 960px) {
+  .Menu li {
+    display: block;
+  }
+}

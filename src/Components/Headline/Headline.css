@@ -1,0 +1,23 @@
+.Headline {
+  font-family: 'Bree Serif', serif;
+  font-size: 4em;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.Headline a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.2s ease-in;
+}
+
+.Headline a:hover {
+  color: #666666;
+}
+
+@media only screen and (max-width: 700px) {
+  .Headline {
+    font-size: 2.5em;
+    margin-bottom: 0.8em;
+  }
+}

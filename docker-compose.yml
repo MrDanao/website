@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+
+  dev-app:
+    build: .
+    container_name: app.dev.website.dantran.fr
+    restart: unless-stopped
+    ports:
+      - 3000:80

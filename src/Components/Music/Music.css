@@ -1,0 +1,112 @@
+.Music {
+  font-family: ABeeZee, sans-serif;
+}
+
+.MusicCaption {
+  font-size: 1.1em;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.MusicList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 1280px;
+}
+
+.MusicList:after {
+  content: '';
+  flex: auto;
+}
+
+.MusicItem {
+  height: 300px;
+  list-style-type: none;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+}
+
+.MusicItemInfo {
+  bottom: 0px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  transition: all 0.35s ease-in-out;
+  width: 100%;
+}
+
+.MusicItemInfo p {
+  font-size: 1em;
+  line-height: 2em;
+}
+
+.MusicItemInfo:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  opacity: 1;
+}
+
+.MusicItemImage {
+  height: 100%;
+  transition: all 0.35s ease-in-out;
+  width: 100%;
+}
+
+.MusicItem:hover .MusicItemImage {
+  transform: scale(1.15);
+}
+
+#MusicButton {
+  color: #000000;
+  bottom: 20px;
+  padding: 5px;
+  position: fixed;
+  right: 20px;
+}
+
+@media only screen and (max-width: 1420px) {
+  .MusicList {
+    width: 960px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .MusicList {
+    width: 600px;
+  }
+
+  .MusicItem {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 275px;
+    margin: 12.5px;
+    width: 275px;
+  }
+
+  .MusicItemInfo h3,
+  .MusicItemInfo p {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .MusicCaption {
+    font-size: 1em;
+  }
+
+  .MusicList {
+    width: 300px;
+  }
+
+  .MusicItem {
+    margin-bottom: 20px;
+  }
+}
