@@ -22,6 +22,7 @@
 }
 
 .MusicItem {
+  cursor: pointer;
   height: 300px;
   list-style-type: none;
   margin: 10px;
@@ -67,6 +68,7 @@
 
 #MusicButton {
   color: #000000;
+  cursor: pointer;
   bottom: 20px;
   padding: 5px;
   position: fixed;
@@ -108,5 +110,37 @@
 
   .MusicItem {
     margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .MusicCaption {
+    font-size: 0.9em;
+  }
+
+  .MusicList {
+    width: 275px;
+  }
+
+  .MusicItem {
+    height: 250px;
+    margin: 12.5px;
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .MusicList {
+    width: 230px;
+  }
+
+  .MusicItem {
+    height: 210px;
+    margin: 10px;
+    width: 210px;
+  }
+
+  #MusicButton {
+    right: 10px;
   }
 }

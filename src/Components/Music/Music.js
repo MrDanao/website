@@ -9,7 +9,6 @@ const playerState = {
 }
 
 const Music = () => {
-  
   const [data, setData] = useState({
     items: [],
     error: null
